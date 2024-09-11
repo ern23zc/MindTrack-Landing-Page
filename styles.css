@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+/* navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #091133;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar .left, .navbar .center, .navbar .right {
+    display: flex;
+    align-items: center;
+}
+.left{
+    justify-items: auto;
+}
+
+.navbar .center {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar .center label {
+    margin-right: 20px;
+
+    cursor: pointer;
+}
+
+.navbar .center img {
+    margin-left: 10px;
+}
+
+.bold-large-text {
+    font-size: 24px; /* Ajusta el tamaño según tus necesidades */
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+
+button {
+    background: lightblue;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: azure;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Asegúrate de que el pseudo-elemento esté detrás del botón */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, skyblue, lightblue, skyblue, lightblue, skyblue, lightblue, skyblue, lightblue);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.main-banner {
+    background-color: #f0f0f0; /* Cambia este valor al color deseado */
+    display: flex;
+    width: 100%;
+    height: 600px;
+    overflow:hidden;
+
+}
+.banner-text, .banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+
+}
+.banner-text h1 {
+    margin-bottom: 1rem;
+    font-size: 36px;
+    color: #333;
+}
+.banner-text p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 18px;
+    color: #666;
+}
+
+.banner-image img {
+    height: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.team-members-div{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-team-members{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-team-members h1{
+    margin-bottom: 1rem;
+    font-size: 26px;
+    color: #333;
+}
+
+.text-team-members p {
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.images-team-members{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.member-encapsulation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* banner info 01*/
+
+.banner-info-01 {
+    display: flex;
+    width: 100%;
+    height: 600px; /* Ajusta la altura según sea necesario */
+    margin-top: 20px;
+    background-color: #091133;
+    color: white;
+}
+
+.banner-info-01-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    box-sizing: border-box;
+}
+
+.banner-info-01-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.banner-info-01-right img {
+    width: 50%; /* Ajusta el ancho de las imágenes según sea necesario */
+    height: auto;
+}
+
+/* banner info 02*/
+
+.banner-info-02 {
+    display: flex;
+    width: 100%;
+    height: 600px; 
+    background-color: #091133;
+    color: white;
+}
+
+.banner-info-02-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.banner-info-02-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    box-sizing: border-box;
+}
+
+
+.banner-info-02-left img {
+    width: 100%;
+    height: 100%;
+}
