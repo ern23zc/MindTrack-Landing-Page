@@ -11,6 +11,7 @@ function smoothScroll(target) {
     document.getElementById(target).scrollIntoView({
         behavior: 'smooth'
     });
+    closeNav();
 }
 
 // Attach event listeners to all elements with the class 'nav-link' or 'nav-button-magic'
