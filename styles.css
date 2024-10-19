@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
+    background-image: url('./assets/images/banner-image-2.jpg');
 }
 
 /* header*/
@@ -67,18 +68,6 @@ body {
     transition: all 0.3s ease 0s;
   }
 
-  
-  @media screen and (max-width: 905px) {
-    .nav-links,
-    .btn {
-      display: none;
-    }
-  
-    .menu {
-      display: inherit;
-    }
-  }
-  
   .header a {
     text-decoration: none;
   }
@@ -131,6 +120,16 @@ body {
       right: 35px;
     }
 }
+@media screen and (max-width: 905px) {
+    .nav-links,
+    .btn {
+      display: none;
+    }
+  
+    .menu {
+      display: inherit;
+    }
+  }
 
 .header {
     display: flex;
@@ -157,7 +156,7 @@ body {
 
 
 button {
-    background: lightblue;
+    background: #3898EC;
     cursor: pointer;
     border: none;
     padding: 11px 22px;
@@ -179,70 +178,140 @@ button:hover::before {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, skyblue, lightblue, skyblue, lightblue, skyblue, lightblue, skyblue, lightblue);
+    background-color: #00c8ff;
     background-size: 800%;
     border-radius: 12px;
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
+
 }
 
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 400% 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
 
 .main-banner {
-    background-color: #f0f0f0;
     display: flex;
-    width: 100%;
-    height: 600px;
-    overflow:hidden;
-
+    width: 100vw;
 }
-.banner-text, .banner-image {
+.banner-text {
     flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.banner-text {
-    text-align: left;
-    display:flex;
+    padding: 15%;
+    text-align: center;
     flex-direction: column;
-    background-color: white;
+}
 
-}
-.banner-text h1 {
-    font-size: 36px;
-    color: skyblue;
-}
 .banner-text p {
     margin-left: 1rem;
     margin-right: 1rem;
-    font-size: 18px;
-    color: #666;
+    font-size: 2rem;
+    color: #ffffff;
 }
 
-.banner-image img {
-    height: 50%;
-    display:flex;
-    justify-content: center;
+.input-group {
+    display: flex;
     align-items: center;
-}
+  }
+  
+  .input {
+    min-height: 50px;
+    width: 25vw;
+    padding: 0 1rem;
+    font-size: 15px;
+    border: 1px solid #3898EC;
+    border-radius: 6px 0 0 6px;
+  }
+  
+  .button--submit {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #3898EC;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color: #00c8ff;
+  }
+  
+  .input:focus, .input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+  }
 
-.banner-image img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+/* Download Section */
+.bts-dwnld {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .bt-os {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 6px;
+    text-decoration: none;
+  }
+  
+  .bt-os:first-child {
+    box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+    background-color: #488aec;
+  }
+  
+  .bt-os:last-child {
+    box-shadow: 0 4px 6px -1px #0b162531, 0 2px 4px -1px #0e192b17;
+    background-color: #fff;
+  }
+  
+  .icon {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .icon svg:last-child {
+    fill: #000
+  }
+  
+  .button-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+  }
+  
+  .button-text span:first-child {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .google span:first-child {
+    color: rgb(219 206 253);
+  }
+  
+  .apple span:first-child {
+    color: rgb(81 87 108);
+  }
+  
+  .google span:last-child {
+    color: #fff;
+    font-weight: 800;
+  }
+  
+  .apple span:last-child {
+    color: #000;
+    font-weight: 800;
+  }
+
+/*Team Members Section*/  
 
 .team-members-div{
     margin-top: 3rem;
@@ -594,4 +663,36 @@ box-sizing: border-box;
 .footer-social img {
     width: 30px;
     height: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner-text {
+        padding: 15vh 5vw;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 80%;
+    }
+    .input-group .input{
+        width: 100%;
+    }
+    .input-group input, .input-group button {
+       border-radius: 6px;
+    }
+
+    .button-text{
+        display: inline;
+    }
+
+    .bts-dwnld {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bt-os {
+        width: 100%;
+    }
+    
 }
