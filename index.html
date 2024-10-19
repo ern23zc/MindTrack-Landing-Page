@@ -8,210 +8,241 @@
     <script src="main.js" defer></script> <!-- Include the JS file -->
 </head>
 <body>
-<div class="navbar">
-    <div class="left">
-        <span class="bold-large-text">MindTrack</span>
-        <img src="./assets/images/logo.jpg" alt="Logo" width="60" height="60">
-    </div>
-    <div class="center">
-        <label class="nav-link" data-section="home-section">Home</label>
-        <label class="nav-link" data-section="about-section">About</label>
-        <label class="nav-link" data-section="contact-section">Contact</label>
-    </div>
-    <div class="right">
-       
-        <button class="nav-button-magic-app" data-section="contact-section">
-            Get started
-        </button>
-    </div>
-</div>
-<div id="home-section" class="main-banner">
-    <div class="banner-text">
-        <img src="./assets/images/logo.jpg" alt="Left Image" class="left-image" height="100px">
-        <h1 class="h1-banner">Welcome to MindTrack!</h1>
-        <p>The WebApp is a tool designed for mental health professionals that
-            facilitates appointment management, data recording, and tracking
-            of patients' clinical history. With an intuitive system,
-            it allows organizing all relevant information in one place,
-            enhancing efficiency and ensuring personalized and secure care.</p>
-        <div class="buttons">
-            <button class="banner-button" data-section="contact-section">Contact</button>
-            <button class="banner-button" data-section="about-section">About the Team</button>
+    <header class="header">
+        <div class="logo">
+            <img src="assets/img/PeaceApp.png" alt="logo" />
         </div>
-    </div>
-    <div class="banner-image">
-        <img src="./assets/images/banner-image-2.jpg" alt="Banner Image">
-    </div>
-</div>
-
-<div class="MindTrack">
-    <div class="Text">
-        <h2>What is MindTrack?</h2>
-        <p> MindTrack is an innovative app designed to transform the way mental health professionals manage their practice. We offer a comprehensive solution that allows you to organize appointments, record essential data, and access medical histories in a simple and secure manner. With MindTrack, you can optimize your time and enhance the quality of care you provide to your patients, all through an intuitive and easy-to-use platform!!! </p>
-    </div>
-
-    <div class="imagen-grid">
-        <div class="appointments"><img src="assets/images/citas.png" alt="appointment management"></div>
-        <div class="medical-record"><img src="assets/images/historialMedico.png" alt="medical record management"></div>
-        <div class="data-virtualization"><img src="assets/images/virtualizacion.png" alt="virtualized medical records"></div>
-        <div class="patients-care"><img src="assets/images/pacientes.png" alt="patient care"></div>
-    </div>
-</div>
-
-<div class="banner-info-01">
-    <div class="banner-info-01-left">
-        <h1>Optimize Your Practice</h1>
-        <p class="center-text">Discover how our platform can transform your daily practice. Specifically
-            designed for mental health professionals, this intuitive tool allows you
-            to manage appointments, record key data, and access your patients'
-            clinical histories quickly and securely. With MindTrack, you can optimize
-            your time, provide more personalized and efficient care, and focus on what
-            truly matters: the well-being of your patients.</p>
-    </div>
-    <div class="banner-info-01-right">
-        <img src="./assets/images/banner-info-image-01.jpg" alt="info 01">
-        <img src="./assets/images/banner-info-image-02.jpg" alt="info 02">
-    </div>
-</div>
-
-<div class="banner-info-02">
-    <div class="banner-info-02-left">
-        <img src="./assets/images/banner-info-image-03.jpg" alt="info 03">
-    </div>
-    <div class="banner-info-02-right">
-        <h1>Closer and More Personalized Care</h1>
-        <p class="center-text">With MindTrack, your patients will feel closer and more personalized care.
-            The app allows you to keep detailed track of their progress, ensuring
-            that each session is perfectly aligned with their needs and goals. By
-            optimizing appointment management and tracking clinical histories, you
-            can dedicate more time to what truly matters: listening, understanding,
-            and helping your patients achieve better mental well-being.</p>
-    </div>
-</div>
-
-<section class="pricing-plans">
-    <h2>Pricing & Plans </h2>
-    <p> Plans are based on the quantity of patients </p>
-    <div class="plans-container">
-        <!--first plan-->
-        <div class="plan">
-            <h3>First Plan</h3>
-            <h4>maximum of 10 patients for professional </h4>
-            <h5> $10 per month </h5>
-            <ul>
-                <li>10 patients for manage</li>
-                <li>Track the biological functions</li>
-                <li>Track patient emotional mood</li>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" id="about-us">About Us</a></li>
+                <li><a href="#" id="app">App</a></li>
+                <li><a href="#" id="services">Services</a></li>
+                <li><a href="#" id="plans">Plans</a></li>
+                <li><a href="#" id="about-product">About the Product</a></li>
+                <li><a href="#" id="about-team">About the Team</a></li>
+                <li><a href="https://peaceapp.netlify.app/" id="web-app">WebApp</a></li>
             </ul>
-            <a href="#" class="btn">Go for it</a>
+        </nav>
+        <a class="btn" href="#" id="contact"><button>Contact Us</button></a>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+    
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" class="close" href="#">&times;</a>
+            <div class="overlay-content">
+                <a href="#" id="about-us2">About Us</a>
+                <a href="#" id="services2">Services</a>
+                <a href="#" id="plans2">Plans</a>
+                <a href="https://graceful-dasik-f30bc0.netlify.app/" id="web-app2">WebApp</a>
+            </div>
+        </div>
+    </header>
+    <div class="navbar">
+        <div class="left">
+            <span class="bold-large-text">MindTrack</span>
+            <img src="./assets/images/logo.jpg" alt="Logo" width="60" height="60">
+        </div>
+        <div class="right">
+            <label class="nav-link" data-section="home-section">Home</label>
+            <label class="nav-link" data-section="about-section">About</label>
+            <label class="nav-link" data-section="contact-section">Contact</label>
+            <button class="nav-button-magic-app" data-section="contact-section">
+                Get started
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="home-section" class="main-banner">
+        <div class="banner-text">
+            <img src="./assets/images/logo.jpg" alt="Left Image" class="left-image" height="100px">
+            <h1 class="h1-banner">Welcome to MindTrack!</h1>
+            <p>The WebApp is a tool designed for mental health professionals that
+                facilitates appointment management, data recording, and tracking
+                of patients' clinical history. With an intuitive system,
+                it allows organizing all relevant information in one place,
+                enhancing efficiency and ensuring personalized and secure care.</p>
+            <div class="buttons">
+                <button class="banner-button" data-section="contact-section">Contact</button>
+                <button class="banner-button" data-section="about-section">About the Team</button>
+            </div>
+        </div>
+        <div class="banner-image">
+            <img src="./assets/images/banner-image-2.jpg" alt="Banner Image">
+        </div>
+    </div>
+
+    <div class="MindTrack">
+        <div class="Text">
+            <h2>What is MindTrack?</h2>
+            <p> MindTrack is an innovative app designed to transform the way mental health professionals manage their practice. We offer a comprehensive solution that allows you to organize appointments, record essential data, and access medical histories in a simple and secure manner. With MindTrack, you can optimize your time and enhance the quality of care you provide to your patients, all through an intuitive and easy-to-use platform!!! </p>
         </div>
 
-        <!--Second Plan-->
-        <div class="plan">
-            <h3>Second plan</h3>
-            <h4> maximum of 30 patients for professional</h4>
-            <h5> $30 per month</h5>
-            <ul>
-                <li>30 patients for manage</li>
-                <li>Track the biological functions</li>
-                <li>Track the patient emotional mood</li>
-                <li>Session recording</li>
-            </ul>
-            <a href="#" class="btn">Go for it</a>
-        </div>
-        <!--Final Plan-->
-        <div class="plan">
-            <h3>Final plan</h3>
-            <h4> maximum of 100 patients for professional</h4>
-            <h5> $100 per Month </h5>
-            <ul>
-                <li>30 patients for manage</li>
-                <li>Track the biological functions</li>
-                <li>Track the patient emotional mood</li>
-                <li>Session recording</li>
-            </ul>
-            <a href="#" class="btn">Go for it</a>
+        <div class="imagen-grid">
+            <div class="appointments"><img src="assets/images/citas.png" alt="appointment management"></div>
+            <div class="medical-record"><img src="assets/images/historialMedico.png" alt="medical record management"></div>
+            <div class="data-virtualization"><img src="assets/images/virtualizacion.png" alt="virtualized medical records"></div>
+            <div class="patients-care"><img src="assets/images/pacientes.png" alt="patient care"></div>
         </div>
     </div>
-</section>
-<div id="about-section" class="team-members-div">
-    <div class="text-team-members">
-        <h1>About Us</h1>
-        <p>MindTrack is a startup formed by a group of university students
-            committed to creating an app that facilitates mental health management.
-            Our mission is to support doctors in efficiently managing appointments,
-            recording data, and tracking patients' clinical histories,
-            all on an intuitive and secure platform. We aim to improve the quality
-            of care and optimize the work of mental health professionals.</p>
-    </div>
-    <div class="images-team-members" id="about-us">
-        <div class="member-encapsulation">
-            <img class ="img" src="./assets/images/Johan.jpg" alt="Banner Image ">
-            <p>Johan Principe Godoy</p>
+
+    <div class="banner-info-01">
+        <div class="banner-info-01-left">
+            <h1>Optimize Your Practice</h1>
+            <p class="center-text">Discover how our platform can transform your daily practice. Specifically
+                designed for mental health professionals, this intuitive tool allows you
+                to manage appointments, record key data, and access your patients'
+                clinical histories quickly and securely. With MindTrack, you can optimize
+                your time, provide more personalized and efficient care, and focus on what
+                truly matters: the well-being of your patients.</p>
         </div>
-        <div class="member-encapsulation">
-            <img class ="img" src="./assets/images/leo.jpg" alt="Banner Image">
-            <p>Leonardo Linares</p>
-        </div>
-        <div class="member-encapsulation">
-            <img class ="img" src="./assets/images/miguel.png" alt="Banner Image">
-            <p>Miguel Ybañez Esquerre</p>
-        </div>
-        <div class="member-encapsulation">
-            <img class ="img" src="./assets/images/valentino.jpg" alt="Banner Image">
-            <p>Valentino</p>
-        </div>
-        <div class="member-encapsulation">
-            <img class ="img" src="./assets/images/ernesto.png" alt="Banner Image">
-            <p>Victor Ernesto Zarate Cáceres</p>
+        <div class="banner-info-01-right">
+            <img src="./assets/images/banner-info-image-01.jpg" alt="info 01">
+            <img src="./assets/images/banner-info-image-02.jpg" alt="info 02">
         </div>
     </div>
-</div>
-<section class="about-us-section">
-    <h2>Video About Us</h2>
-    <div class="video-container">
-        <iframe
-                src="https://www.youtube.com/" *** aca estaran los videos about ***
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-        </iframe>
+
+    <div class="banner-info-02">
+        <div class="banner-info-02-left">
+            <img src="./assets/images/banner-info-image-03.jpg" alt="info 03">
+        </div>
+        <div class="banner-info-02-right">
+            <h1>Closer and More Personalized Care</h1>
+            <p class="center-text">With MindTrack, your patients will feel closer and more personalized care.
+                The app allows you to keep detailed track of their progress, ensuring
+                that each session is perfectly aligned with their needs and goals. By
+                optimizing appointment management and tracking clinical histories, you
+                can dedicate more time to what truly matters: listening, understanding,
+                and helping your patients achieve better mental well-being.</p>
+        </div>
     </div>
-</section>
-<section class="about-the-product-section">
-    <h2>Video About the Product</h2>
-    <div class="video-container">
-        <iframe
+
+    <section class="pricing-plans">
+        <h2>Pricing & Plans </h2>
+        <p> Plans are based on the quantity of patients </p>
+        <div class="plans-container">
+            <!--first plan-->
+            <div class="plan">
+                <h3>First Plan</h3>
+                <h4>maximum of 10 patients for professional </h4>
+                <h5> $10 per month </h5>
+                <ul>
+                    <li>10 patients for manage</li>
+                    <li>Track the biological functions</li>
+                    <li>Track patient emotional mood</li>
+                </ul>
+                <a href="#" class="btn">Go for it</a>
+            </div>
+
+            <!--Second Plan-->
+            <div class="plan">
+                <h3>Second plan</h3>
+                <h4> maximum of 30 patients for professional</h4>
+                <h5> $30 per month</h5>
+                <ul>
+                    <li>30 patients for manage</li>
+                    <li>Track the biological functions</li>
+                    <li>Track the patient emotional mood</li>
+                    <li>Session recording</li>
+                </ul>
+                <a href="#" class="btn">Go for it</a>
+            </div>
+            <!--Final Plan-->
+            <div class="plan">
+                <h3>Final plan</h3>
+                <h4> maximum of 100 patients for professional</h4>
+                <h5> $100 per Month </h5>
+                <ul>
+                    <li>30 patients for manage</li>
+                    <li>Track the biological functions</li>
+                    <li>Track the patient emotional mood</li>
+                    <li>Session recording</li>
+                </ul>
+                <a href="#" class="btn">Go for it</a>
+            </div>
+        </div>
+    </section>
+    <div id="about-section" class="team-members-div">
+        <div class="text-team-members">
+            <h1>About Us</h1>
+            <p>MindTrack is a startup formed by a group of university students
+                committed to creating an app that facilitates mental health management.
+                Our mission is to support doctors in efficiently managing appointments,
+                recording data, and tracking patients' clinical histories,
+                all on an intuitive and secure platform. We aim to improve the quality
+                of care and optimize the work of mental health professionals.</p>
+        </div>
+        <div class="images-team-members" id="about-us">
+            <div class="member-encapsulation">
+                <img class ="img" src="./assets/images/Johan.jpg" alt="Banner Image ">
+                <p>Johan Principe Godoy</p>
+            </div>
+            <div class="member-encapsulation">
+                <img class ="img" src="./assets/images/leo.jpg" alt="Banner Image">
+                <p>Leonardo Linares</p>
+            </div>
+            <div class="member-encapsulation">
+                <img class ="img" src="./assets/images/miguel.png" alt="Banner Image">
+                <p>Miguel Ybañez Esquerre</p>
+            </div>
+            <div class="member-encapsulation">
+                <img class ="img" src="./assets/images/valentino.jpg" alt="Banner Image">
+                <p>Valentino</p>
+            </div>
+            <div class="member-encapsulation">
+                <img class ="img" src="./assets/images/ernesto.png" alt="Banner Image">
+                <p>Victor Ernesto Zarate Cáceres</p>
+            </div>
+        </div>
+    </div>
+    <section class="about-us-section">
+        <h2>Video About Us</h2>
+        <div class="video-container">
+            <iframe
+                    src="https://www.youtube.com/" *** aca estaran los videos about ***
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    <section class="about-the-product-section">
+        <h2>Video About the Product</h2>
+        <div class="video-container">
+            <iframe
                 src="https://www.youtube.com"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
-        </iframe>
-    </div>
-</section>
-<footer class="footer" >
-    <div class="footer-content">
-        <span>© 2024 MindTrack</span>
-        <span>MindTrack</span>
-        <span>Email: OfficeMark@Reconnect.com</span>
-    </div>
+            </iframe>
+        </div>
+    </section>
+    <footer class="footer" >
+        <div class="footer-content">
+            <span>© 2024 MindTrack</span>
+            <span>MindTrack</span>
+            <span>Email: OfficeMark@Reconnect.com</span>
+        </div>
 
-    <!-- Links and icons in the same section -->
-    <div class="footer-bottom">
-        <div class="footer-links">
-            <a href="#" class="nav-link" data-section="home-section">Home</a>
-            <a href="#" class="nav-link" data-section="about-section">About</a>
-            <a href="#" class="nav-link" data-section="contact-section">Contact</a>
+        <!-- Links and icons in the same section -->
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#" class="nav-link" data-section="home-section">Home</a>
+                <a href="#" class="nav-link" data-section="about-section">About</a>
+                <a href="#" class="nav-link" data-section="contact-section">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="./assets/images/whatsapp.png" alt="WhatsApp"></a>
+                <a href="#"><img src="./assets/images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="./assets/images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./assets/images/x-twitter.png" alt="X"></a>
+            </div>
         </div>
-        <div class="footer-social">
-            <a href="#"><img src="./assets/images/whatsapp.png" alt="WhatsApp"></a>
-            <a href="#"><img src="./assets/images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="./assets/images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="./assets/images/x-twitter.png" alt="X"></a>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
