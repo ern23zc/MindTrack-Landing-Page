@@ -3,6 +3,9 @@ body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     background-image: url('./assets/images/banner-image-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 240%;
+    background-position: center;
 }
 
 /* header*/
@@ -11,7 +14,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
     position: fixed;
     width: 100%;
   }
@@ -693,6 +696,10 @@ box-sizing: border-box;
     }
     .bt-os {
         width: 100%;
+    }
+    .body{
+        background-size: default;
+        background-position: default;
     }
     
 }
