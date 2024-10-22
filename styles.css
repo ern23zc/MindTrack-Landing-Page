@@ -4,8 +4,8 @@ body {
     font-size: 14px;
     background-image: url('./assets/images/banner-image-2.jpg');
     background-repeat: no-repeat;
-    background-size: 240%;
-    background-position: center;
+    background-size: 120%;
+    background-position: top;
 }
 
 /* header*/
@@ -16,9 +16,13 @@ body {
     align-items: center;
     height: 8vh;
     position: fixed;
-    width: 100%;
-  }
-  
+    width: 100vw;
+}
+ nav{
+    width: fit-content;
+    padding-right: 1%;
+ }
+
   .header .logo {
     cursor: pointer;
     margin-right: auto;
@@ -34,7 +38,7 @@ body {
     transform: scale(1.1);
   }
   .header .menu {
-    padding-right: 3%;
+    padding-right: 5%;
   }
   .header .nav-links {
     list-style: none;
@@ -697,9 +701,9 @@ box-sizing: border-box;
     .bt-os {
         width: 100%;
     }
-    .body{
-        background-size: default;
-        background-position: default;
+    body{
+        background-size: 250%;
+        background-position: top;
     }
     
 }
