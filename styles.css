@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
+    background-color: #000000;
     background-image: url('./assets/images/banner-image-2.jpg');
     background-repeat: no-repeat;
     background-size: 120%;
@@ -18,52 +19,52 @@ body {
     position: fixed;
     width: 100vw;
 }
- nav{
+nav{
     width: fit-content;
     padding-right: 1%;
- }
+}
 
-  .header .logo {
+.header .logo {
     cursor: pointer;
     margin-right: auto;
-  }
+}
   
-  .header .logo img {
+.header .logo img {
     height: 80px;
     width: auto;
     border-radius: 10%;
     transition: all 0.3s;
-  }
+}
   .header .logo img:hover {
     transform: scale(1.1);
-  }
-  .header .menu {
+}
+.header .menu {
     padding-right: 5%;
-  }
+}
   .header .nav-links {
     list-style: none;
-  }
-  .header .nav-links li {
+}
+header .nav-links li {
     display: inline-block;
     padding: 0 20px;
     
-  }
-  .header .nav-links li:hover,
-  .overlay a:hover {
+}
+.header .nav-links li:hover,
+.overlay a:hover {
     transform: scale(1.1);
-  }
-  .header .nav-links a {
+}
+.header .nav-links a {
     font-size: 700;
     color: #eceff1;
-  }
-  .header .nav-links a:hover {
+}
+.header .nav-links a:hover {
     color: #ffbc0e;
-  }
-  .menu {
+}
+.menu {
     display: none;
-  }
+}
   
-  .header .menu button {
+.header .menu button {
     margin-left: 20px;
     font-weight: 700;
     color: #1b3039;
@@ -73,13 +74,13 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-  }
+}
 
-  .header a {
+.header a {
     text-decoration: none;
-  }
+}
   
-  .header .overlay {
+.header .overlay {
     height: 100%;
     width: 0;
     position: fixed;
@@ -89,27 +90,27 @@ body {
     background-color: #464343f2;
     overflow: hidden;
     transition: all 0.3s ease 0s;
-  }
+}
   
-  .header .overlay .overlay-content {
+.header .overlay .overlay-content {
     display: flex;
     height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .header .overlay a {
+.header .overlay a {
     padding: 15px;
     font-size: 36px;
     display: block;
     transition: all 0.3s ease 0s;
     font-weight: 700;
     color: #eceff1;
-  }
+}
   
   
-  .header .overlay .close {
+.header .overlay .close {
     position: absolute;
     top: 20px;
     right: 45px;
@@ -191,7 +192,6 @@ button:hover::before {
 
 }
 
-
 .main-banner {
     display: flex;
     width: 100vw;
@@ -206,9 +206,7 @@ button:hover::before {
 }
 
 .banner-text p {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: #ffffff;
 }
 
@@ -368,51 +366,30 @@ button:hover::before {
     justify-content: center;
 }
 
-/*psymed*/
-.psymed {
-    display: flex;
+/*MindTrack*/
+.MindTrack {
     align-items: center;
-    justify-content: space-between;
-    padding: 80px;
-
-    background-color: white;
+    padding: 5% 15%;
+    text-align: center;
+    flex-direction: column;
 }
 
 .Text {
-    max-width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #ffffff;
 }
 
 .Text h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    text-align: center;
     color: skyblue;
 }
 
-.Text p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-}
-
-
 .imagen-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
-    width: 30%;
-    margin-left: 450px;
-    margin-bottom: 50px;
-}
-
-.imagen-grid div {
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
 }
 
 .imagen-grid img {
@@ -674,6 +651,10 @@ box-sizing: border-box;
 
 
 @media screen and (max-width: 768px) {
+    body{
+        background-size: 250%;
+        background-position: top;
+    }
     .banner-text {
         padding: 15vh 5vw;
     }
@@ -701,9 +682,19 @@ box-sizing: border-box;
     .bt-os {
         width: 100%;
     }
-    body{
-        background-size: 250%;
-        background-position: top;
+    .MindTrack{
+        padding: 5%;
+    }
+    .imagen-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%;
+    }
+    
+    .imagen-grid img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
     }
     
 }
