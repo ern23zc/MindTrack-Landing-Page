@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    background-color: #000000;
+    background-color: #F5F2ED;
     background-image: url('./assets/images/banner-image-2.jpg');
     background-repeat: no-repeat;
     background-size: 120%;
@@ -316,56 +316,6 @@ button:hover::before {
     font-weight: 800;
   }
 
-/*Team Members Section*/  
-
-.team-members-div{
-    margin-top: 3rem;
-    background-color: #F5F2ED;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.text-team-members{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-}
-.text-team-members h1{
-    margin-bottom: 1rem;
-    font-size: 26px;
-    color: skyblue;
-}
-
-.text-team-members p {
-    margin-left: 12rem;
-    margin-right: 12rem;
-}
-
-.img {
-    display: flex;
-    align-items: center;
-    width: 130px;
-    height: 130px;
-    overflow: hidden;
-    border-radius: 30px;
-    position: relative;
-
-}
-
-.images-team-members{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.member-encapsulation{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 /*MindTrack*/
 .MindTrack {
     align-items: center;
@@ -460,7 +410,6 @@ button:hover::before {
 }
 
 .plan {
-
     background-color: #f9f9f9;
     border-radius: 10px;
     padding: 20px;
@@ -490,6 +439,7 @@ button:hover::before {
 
 .plan:hover {
     transform: scale(1.05);
+    position: initial;
 }
 
 .plan h3 {
@@ -520,12 +470,58 @@ button:hover::before {
 }
 
 .plan a.btn:hover {
-    background: linear-gradient(45deg, skyblue, lightblue, skyblue, lightblue, skyblue, lightblue, skyblue, lightblue);
-
+    background-color: #00c8ff;
 }
+
+/*Team Members Section*/  
+
+.team-members-div{
+    background-color: #F5F2ED;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-team-members{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.text-team-members h1{
+    font-size: 1.4rem;
+    color: skyblue;
+    text-align: center;
+}
+
+.text-team-members p {
+    margin: 0 12rem;
+}
+
+.member-encapsulation img {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.images-team-members{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.member-encapsulation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* About Us Section */
 .about-us-section {
     text-align: center;
-    margin-top: 3rem;
     background-color: #F5F2ED;
     color: skyblue;
 }
@@ -691,5 +687,20 @@ button:hover::before {
     }
     .plan{
         width: 90%;
+    }
+    .text-team-members p{
+        margin: 0;
+    }
+    .images-team-members{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .member-encapsulation{
+        width: 60vw;
+        display: flex;
+        flex-direction: initial;
+        align-items: left;
+        gap: 20px;
     }
 }
