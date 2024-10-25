@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    background-color: #F5F2ED;
+    background-color: rgba(0, 0, 0, 0.2);
     background-image: url('./assets/images/banner-image-2.jpg');
     background-repeat: no-repeat;
     background-size: 120%;
@@ -612,7 +612,7 @@ button:hover::before {
 
 @media screen and (max-width: 768px) {
     body{
-        background-size: 250%;
+        background-size: 340%;
         background-position: top;
     }
     .banner-text {
