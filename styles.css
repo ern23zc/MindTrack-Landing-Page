@@ -35,13 +35,13 @@ nav{
     border-radius: 10%;
     transition: all 0.3s;
 }
-  .header .logo img:hover {
+.header .logo img:hover {
     transform: scale(1.1);
 }
 .header .menu {
     padding-right: 5%;
 }
-  .header .nav-links {
+.header .nav-links {
     list-style: none;
 }
 header .nav-links li {
@@ -194,7 +194,7 @@ button:hover::before {
 
 .main-banner {
     display: flex;
-    width: 100vw;
+    width: 100%;
 }
 .banner-text {
     flex: 1;
@@ -669,7 +669,7 @@ iframe {
         align-items: center;
     }
     .plan{
-        width: 90%;
+        width: 95%;
     }
     .text-team-members p{
         margin: 0;
@@ -687,7 +687,7 @@ iframe {
         gap: 20px;
     }
     iframe {
-        width: 90%;
+        width: 95%;
         height: 200px;
     }
 }
