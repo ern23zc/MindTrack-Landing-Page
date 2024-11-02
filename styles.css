@@ -351,9 +351,9 @@ button:hover::before {
 
 .banner-info-01, .banner-info-02 {
     display: flex;
-
     background-color: rgb(0, 0, 0,0.2);
     color: #ffffff;
+    padding: 10px;
 }
 
 .banner-info-01 .left, .banner-info-02 .right {
@@ -390,7 +390,7 @@ button:hover::before {
 /*pricing plans section*/
 .pricing-plans{
     text-align: center;
-    padding: 50px;
+    padding: 10px 50px;
     background-color: #F5F2ED;
 }
 
@@ -474,7 +474,6 @@ button:hover::before {
 }
 
 /*Team Members Section*/  
-
 .team-members-div{
     background-color: #F5F2ED;
     display: flex;
@@ -484,7 +483,7 @@ button:hover::before {
 .text-team-members{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0 2rem 2rem;
     text-align: justify;
     font-size: 1.2rem;
 }
@@ -519,20 +518,17 @@ button:hover::before {
     justify-content: center;
 }
 
-/* About Us Section */
-.about-us-section {
+/* Videos */
+.about-us-section, .about-the-product-section {
     text-align: center;
     background-color: #F5F2ED;
     color: skyblue;
 }
-.about-the-product-section {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    padding: 5px;
-    text-align: center;
-    background-color: #F5F2ED;
-    color: skyblue;
+.about-us-section h2, .about-the-product-section h2 {
+    margin: 0;
+    padding: 20px 10px;
 }
+
 .video-container {
     position: relative;
     width: 100%;
