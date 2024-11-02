@@ -529,23 +529,10 @@ button:hover::before {
     padding: 20px 10px;
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 1200px; /* Increased max width for a wider video */
-    margin: 0 auto; /* Center the video horizontally */
-    padding-bottom: 30%; /* Decreased height to make the video less tall */
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width of the container */
-    height: 100%; /* Full height to maintain aspect ratio */
-    border: 0;
+iframe {
+    width: 40%; /* Full width of the container */
+    height: 315px; /* Full height to maintain aspect ratio */
+    padding: 10px; /* Added padding to the video */
 }
 
 
@@ -698,5 +685,9 @@ button:hover::before {
         flex-direction: initial;
         align-items: left;
         gap: 20px;
+    }
+    iframe {
+        width: 90%;
+        height: 200px;
     }
 }
