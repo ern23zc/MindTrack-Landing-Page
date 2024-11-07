@@ -584,7 +584,7 @@ iframe {
 
 @media screen and (max-width: 768px) {
     body{
-        background-size: 340%;
+        background-size: 200%;
         background-position: top;
     }
     .banner-text {
